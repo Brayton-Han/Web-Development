@@ -1,0 +1,22 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+img.big {
+    height: 120px;
+}
+
+p.ex {
+    height: 100px;
+    width:100px;
+}
+
+.testClass {
+    color: red;
+    font-size: 300%;
+}

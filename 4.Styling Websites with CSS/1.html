@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <titie> onblur event page</titie>
+    <link rel="stylesheet" type="text/css" href="basic.css">
+    <script>
+    function domath(){
+        var x = 2;
+        var y = 10;
+        var z = 4;
+        var answer = x*y/z;
+        document.getElementById("output").innerHTML = "The result is " + answer;
+    }
+
+    </script>
+
+    <style type="text/css">
+        p.regular {color: blue;font-size: 100%;}
+        p.medium {columns: green;font-size: 150%;}
+        div {height: 50px;width: 100%;}
+    </style>
+
+</head>
+
+<body>
+<p> JavaScript Testing</p>
+
+<button onclick="domath();">Do math</button>
+
+<p id="output" style="clear: left;"></p>
+
+<p class="regular">This is a test of regular.</p>
+
+<div style="background-color: red;"></div>
+<div style="background-color: orange;"></div>
+<div style="background-color: yellow;"></div>
+<div style="background-color: green;"></div>
+<div style="background-color: blue;"></div>
+<div style="background-color: purple;"></div>
+
+</body>
+</html>
