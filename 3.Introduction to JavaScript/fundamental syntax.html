@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>My Dynamic Details Page</title>
+
+        <script type="text/javascript">
+
+        function addparagraphtext(){
+            document.getElementById("para").innerHTML = "Thanks for adding text";
+        }
+
+        function displayinput(){
+            var testinput = document.getElementById("name").value;
+            if(testinput.length == 0)
+                document.getElementById("para").innerHTML = "Hey, you didn't type anything";
+            else
+                document.getElementById("para").innerHTML = testinput;
+        }
+
+        </script>
+
+    </head>
+
+    <body>
+        <H1 style="color: blue;">Let's see a button</H1>
+
+        <button onclick="addparagraphtext();">Click Me</button>
+
+        <H1 style="color: blue;">Let's see another button.</H1>
+
+        <input id="name" type="text"/>
+
+        <button onclick="displayinput();">Color It</button>
+        
+        <p id="para" style="color: blue;"></p>
+    </body>
+
+</html>

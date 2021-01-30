@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>onblur event Page</title>
+<script>
+    function checkfield1(){
+        var field = document.getElementById("field1").value;
+        if(field.length < 5)
+            document.getElementById("message1").innerHTML = "Too short!";
+        else
+            document.getElementById("message1").innerHTML = "That's long enough!";
+    }
+    function checkfield2(){
+        var field = document.getElementById("field2").value;
+        if(field!="")
+            document.getElementById("message2").innerHTML = "Input accepted";
+        else
+            document.getElementById("message2").innerHTML = "You must provide input!";
+    }
+</script>
+</head>
+
+<body onload="alert('The page has loaded, okay?');">
+
+<H1 style="color: blue;">Experimenting with Links and Text</H1>
+<a href="www.google.com">Go to Google</a>
+<p style="color: blue;font-size: 200%;">Practicing HTML is fun. <em>So far</em> we have learned that help</p>
+     
+<br>
+
+<p>JavaScript onblur event tests.</p>
+<input id="field1" type="text" onblur="checkfield1();"/><span id="message1"></span>
+<input id="field2" type="text" onblur="checkfield2();"/><span id="message2"></span>
+<input id="filed3" type="text"/> <span id="message3"></span>
+</body>
+
+</html>

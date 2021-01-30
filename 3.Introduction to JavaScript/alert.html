@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Alert Page</title>
+
+<script>
+    function myalertmath(){
+        var usernumber = document.getElementById("mathinput").value;
+        alert("Your number * 5 is " + usernumber*5);
+    }
+</script>
+
+    </head>
+
+    <body>
+       <p>JavaScript Alert Test.</p>
+
+       <button onclick="alert('The test worked');">Alert Test</button>
+
+       <input id="mathinput" type="number"/>
+
+       <button onclick="myalertmath()">Multiply * 5</button>
+
+       <p id="test"></p>
+    </body>
+
+</html>
